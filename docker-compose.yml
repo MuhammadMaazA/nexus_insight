@@ -1,0 +1,11 @@
+version: '3.8' # Use a recent Docker Compose file format version
+
+services:
+  nexus_insight_agent:
+    build: . # Build the image using the Dockerfile in the current directory
+    container_name: nexus_insight_agent_container # A specific name for the running container
+    env_file: # This tells docker-compose to load environment variables from this file
+      - .env # Points to your ACTUAL .env file in the project root on your host machine
+    # You might add port mappings here later if you expose a web UI (e.g., Gradio/Streamlit)
+    # ports:
+    #   - "8000:8000"

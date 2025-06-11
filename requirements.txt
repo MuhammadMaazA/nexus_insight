@@ -1,0 +1,7 @@
+langchain==0.2.0  # Or a more recent stable version if preferred
+langchain-openai  # If using OpenAI models (GPT-4o, etc.)
+# OR langchain-anthropic # If using Anthropic models (Claude 3, etc.)
+# OR langchain-google_genai # If using Google models (Gemini, etc.)
+langsmith>=0.1.0
+python-dotenv
+
