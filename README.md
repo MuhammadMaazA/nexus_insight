@@ -86,25 +86,27 @@ This project is designed to be run using Docker for easy setup and reproducibili
 
 ## 📂 Project Structure
 
+```
 nexus_insight/
-├── src/                          # Main source code for the agent
-│   ├── agent/                    # LangGraph agent definition, state, and nodes
-│   ├── tools/                    # Definitions for all external tools (Semantic Scholar, ArXiv, Code Executor)
-│   │   ├── init.py
-│   │   └── semantic_scholar_tool.py # Initial Semantic Scholar Tool
-│   ├── prompts/                  # Custom prompts for the LLM
-│   ├── utils/                    # Utility functions (e.g., data processing, helpers)
-│   └── main.py                   # Entry point for testing and running the agent
-├── notebooks/                    # Jupyter notebooks for exploration, analysis, or prototyping
-├── data/                         # Store any local data, outputs, or intermediate results
-├── config/                       # Configuration files (e.g., specific model parameters)
-├── .env                          # Your local environment variables (ignored by Git)
-├── .env.example                  # Template for environment variables
-├── Dockerfile                    # Instructions for building the Docker image
-├── docker-compose.yml            # Docker Compose configuration for running the agent
-├── requirements.txt              # Python dependencies
-├── .gitignore                    # Specifies files/directories to ignore in Git
-└── README.md                     # Project overview and documentation (this file!)
+├── src/                    # Main source code for the agent
+│   ├── agent/              # LangGraph agent definition, state, and nodes
+│   ├── tools/              # External tools (Semantic Scholar, ArXiv, Code Executor)
+│   │   ├── __init__.py
+│   │   └── semantic_scholar_tool.py  # Initial Semantic Scholar Tool
+│   ├── prompts/            # Custom prompts for the LLM
+│   ├── utils/              # Utility functions (e.g., data processing, helpers)
+│   └── main.py             # Entry point for testing and running the agent
+├── notebooks/              # Jupyter notebooks for exploration, analysis, or prototyping
+├── data/                   # Local data, outputs, or intermediate results
+├── config/                 # Configuration files (e.g., model parameters)
+├── .env                    # Local environment variables (ignored by Git)
+├── .env.example            # Template for environment variables
+├── Dockerfile              # Docker image build instructions
+├── docker-compose.yml      # Docker Compose configuration
+├── requirements.txt        # Python dependencies
+├── .gitignore              # Git ignore rules
+└── README.md               # Project overview and documentation
+```
 
 ---
 
